@@ -5,43 +5,65 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: #87CEEB;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mytaskmanager.SceneController">
-   <Button alignment="BOTTOM_CENTER" layoutX="200.0" layoutY="700.0" mnemonicParsing="false" onAction="#switchToMainScene" pickOnBounds="false" prefHeight="100.0" prefWidth="200.0" text="Tasks">
+   <Button layoutX="200.0" layoutY="700.0" mnemonicParsing="false" onAction="#switchToMainScene" pickOnBounds="false" prefHeight="100.0" prefWidth="200.0" text="Tasks">
       <font>
          <Font size="24.0" />
       </font>
+      <graphic>
+         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@tasks.png" />
+            </image>
+         </ImageView>
+      </graphic>
    </Button>
-   <Button alignment="BOTTOM_CENTER" layoutY="700.0" mnemonicParsing="false" onAction="#switchToProfileScene" prefHeight="100.0" prefWidth="200.0" text="Profile">
+   <Button layoutY="700.0" mnemonicParsing="false" onAction="#switchToProfileScene" prefHeight="100.0" prefWidth="200.0" text="Profile">
       <font>
          <Font size="24.0" />
       </font>
+      <graphic>
+         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@profile.png" />
+            </image>
+         </ImageView>
+      </graphic>
    </Button>
-   <Button alignment="BOTTOM_CENTER" layoutX="400.0" layoutY="700.0" mnemonicParsing="false" onAction="#switchToAchievementScene" prefHeight="100.0" prefWidth="200.0" text="Achievements">
+   <Button layoutX="400.0" layoutY="700.0" mnemonicParsing="false" onAction="#switchToAchievementScene" prefHeight="100.0" prefWidth="200.0" text="Achievements">
       <font>
-         <Font size="24.0" />
+         <Font size="18.0" />
       </font>
       <effect>
          <InnerShadow />
       </effect>
+      <graphic>
+         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@achievements.png" />
+            </image>
+         </ImageView>
+      </graphic>
    </Button>
-   <ScrollPane hbarPolicy="NEVER" layoutX="10.0" layoutY="13.0" prefHeight="660.0" prefWidth="580.0" style="-fx-border-color: black;" vbarPolicy="ALWAYS">
+   <ScrollPane hbarPolicy="NEVER" layoutX="10.0" layoutY="83.0" prefHeight="600.0" prefWidth="580.0" style="-fx-border-color: black;" vbarPolicy="ALWAYS">
       <content>
          <AnchorPane prefHeight="660.0" prefWidth="580.0" style="-fx-background-color: #87CEEB;">
             <children>
-               <Button layoutX="40.0" layoutY="10.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Achievement 1" />
-               <Button layoutX="40.0" layoutY="80.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text=" Achievement 2" />
-               <Button layoutX="40.0" layoutY="150.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Achievement 3" />
-               <Button layoutX="40.0" layoutY="220.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Achievement 4" />
-               <Button layoutX="40.0" layoutY="290.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Achievement 5" />
-               <Button layoutX="40.0" layoutY="360.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Achievement 6" />
-               <Button layoutX="40.0" layoutY="430.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Achievement 7" />
-               <Button layoutX="40.0" layoutY="500.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Achievement 8" />
-               <Button layoutX="40.0" layoutY="570.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Achievement 9" />
-               <Button layoutX="40.0" layoutY="640.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Achievement 10" />
+               <Button layoutX="40.0" layoutY="10.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Refresh to see achievement" />
+               <Button layoutX="40.0" layoutY="80.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Refresh to see achievement" />
+               <Button layoutX="40.0" layoutY="150.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Refresh to see achievement" />
+               <Button layoutX="40.0" layoutY="220.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Refresh to see achievement" />
+               <Button layoutX="40.0" layoutY="290.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Refresh to see achievement" />
+               <Button layoutX="40.0" layoutY="360.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Refresh to see achievement" />
+               <Button layoutX="40.0" layoutY="430.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Refresh to see achievement" />
+               <Button layoutX="40.0" layoutY="500.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Refresh to see achievement" />
+               <Button layoutX="40.0" layoutY="570.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Refresh to see achievement" />
+               <Button layoutX="40.0" layoutY="640.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Refresh to see achievement" />
                <Button layoutX="40.0" layoutY="710.0" mnemonicParsing="false" onAction="#completeAchievementTry" prefHeight="50.0" prefWidth="500.0" text="Achievement 11" />
                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="71.0" layoutY="695.0" pickOnBounds="true" preserveRatio="true" />
             </children>
@@ -76,4 +98,9 @@
          </AnchorPane>
       </content>
    </DialogPane>
+   <Button layoutX="200.0" layoutY="15.0" mnemonicParsing="false" onAction="#refreshAchievementPage" prefHeight="50.0" prefWidth="200.0" text="Refresh">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Button>
 </AnchorPane>
